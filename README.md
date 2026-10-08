@@ -2,9 +2,9 @@
 
 ## Overview
 
-This project implements a custom Random Forest classifier in Python for sentiment analysis on the IMDb movie reviews dataset.
+This project explores sentiment classification of IMDb movie reviews using a custom Random Forest implementation in Python.
 
-The implementation includes a custom ID3 decision tree algorithm, bootstrap sampling, Information Gain feature selection, and majority voting. The model is evaluated on the IMDb dataset and compared with the Random Forest implementation provided by scikit-learn.
+The project includes an ID3 Decision Tree implementation, Information Gain for feature selection, bootstrap sampling, and majority voting. The custom model is compared with scikit-learn's RandomForestClassifier to evaluate and understand differences in performance.
 
 ---
 
@@ -12,7 +12,7 @@ The implementation includes a custom ID3 decision tree algorithm, bootstrap samp
 
 - Custom Random Forest implementation
 - Custom ID3 Decision Tree
-- Information Gain based feature selection
+- Information Gain-based splitting in custom ID3 Decision Trees
 - Bootstrap sampling for tree generation
 - Binary Bag-of-Words text representation
 - Automatic vocabulary creation from training data
@@ -65,3 +65,11 @@ The following metrics are calculated:
 - F1-score
 
 The project also generates learning curves showing the model's performance.
+
+---
+
+## Limitations and Future Improvements
+
+The custom Random Forest implementation was developed as an educational project to explore how decision trees and ensemble learning work internally.
+
+The implementation requires further validation, particularly regarding feature indexing and tree traversal. Future improvements include reviewing these components, optimizing training performance, and evaluating the corrected model against scikit-learn.
